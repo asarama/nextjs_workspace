@@ -33,9 +33,19 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-Following:
+# Following:
 https://www.youtube.com/watch?v=NgayZAuTgwM
 
 
 npx prisma migrate dev init
 npx prisma migrate dev
+
+## Hooks 101
+
+### Do not use nested hooks
+
+### useState
+
+Set state method can take a function as a parameter. This function will have access to the previous value.
+
+use state method can take a function as it's parameter. This will only set the state once on load.
