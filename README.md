@@ -48,4 +48,19 @@ npx prisma migrate dev
 
 Set state method can take a function as a parameter. This function will have access to the previous value.
 
-use state method can take a function as it's parameter. This will only set the state once on load.
+Use state method can take a function as it's parameter. This will only set the state once on load.
+
+### useEffect
+
+Returning a function can be used to clean up our state before running the main code. Useful for event listeners or anything persistent we want to unsubscribe from.
+
+### useMemo
+
+All rerenders rebuild your function. Useful for caching values that are static and run every time we rerender.
+
+### useRef
+
+Similar to useState but instead does not cause a rerender on change. Useful to get references to html elements using the ref property.
+
+### useContext
+
